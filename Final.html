@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="Robot.png" type="image/x-icon">
+<title>Robotics (2.0)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('TestOne.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("ImageTwo.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="Gallery.html" class="w3-bar-item w3-button" target="_blank">GALLERY</a>
+    <a href="History.html" class="w3-bar-item w3-button" target="_blank">HISTORY</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Robotics<span class="w3-hide-small"></span></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ROBOTICS</h3>
+  <p class="w3-center"><em>Robots are cool!</em></p>
+  <p>Robotics is an interdisciplinary branch of computer science and engineering. Robotics involves design, construction, operation, and the use of robots. What is a robot? Well robots are the product of the robotics field, where programmable machines are built that can assist humans. Robots were originally constructed to handle tedious tasks (like building cars on an assembly line), but have since expanded well beyond their original uses to perform other tasks like, cleaning homes and assisting with incredibly complex surgeries. Each robot has a differing level of independence, ranging from a remote-controlled bot that carries out tasks that a human has full control over to fully-autonomous bots that perform tasks without any external influences.
+</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Carlos Hernandez-Arguera</b></p><br>
+      <img src="Carlos.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website. My name's Carlos Hernandez. Now let's talk about some different types of robots that contribute to our society. There are generally 5 different types of robots pre-programmed robots, humanoid robots, autonomous robots, teleoperated robots, and augmenting robots. <b>Pre-programmed</b> robots operate in a controlled environment where they do simple, tedious tasks. Its job is to perform tasks longer, faster and more efficiently than a human. <b>Humanoid</b> robots are robots that look human and mimic human behavior. These robots usually perform human-style activities and are sometimes designed to have human faces and expressions. <b>Autonomous</b> robots operate independently. These bots do things often without human supervision. They are quite unique because they use sensors to “see” the world around them, and then employ decision-making skills to take the next step based on their data and mission. <b>Teleoperated</b> robots are semi-autonomous bots that use a wireless network to allow remote control from a safe distance. These robots usually work in extreme geographical conditions, weather, circumstances, etc. Finally, <b>Augmenting</b> robots either enhance current human capabilities or replace the capabilities a human may have lost they’re pretty much prosthetic limbs or exoskeletons used to lift hefty weights. <b>Below are some jobs within the robotics field and their salaries. </b>
+</p>
+    </div>
+  </div>
+  
+  
+  <div class="w3-light-grey">
+   
+  </div>
+  
+  <div class="w3-light-grey">
+    
+  </div>
+  
+  <div class="w3-light-grey">
+    
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">$107,300</span><br>
+   Robotics Engineer
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">$63,903</span><br>
+   Computer Programmer
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">$36,244</span><br>
+    Electro-mechanical Technicians
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">$68,570</span><br>
+   Aerospace Engineering and Operations Technicians
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">FUN FACTS</h3>
+  <p class="w3-center"><em>Here are some fun facts about robotics companies!<br> Click on the images to make them bigger!</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="Spot(2.0).jpg" style= "" onclick="onClick(this)" width="220" height="175" class="w3-hover-opacity" alt="Boston Dynamics robot “Spot” is a nimble four-legged robot dog that can walk around your office, home, or outdoors. It can map its environment, sense and avoid obstacles, climb stairs, and open doors with it’s attachable arm. It can also fetch you a drink.">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Nuro.jpg" style="width:100%" onclick="onClick(this)" width="200" height="175" class="w3-hover-opacity" alt="Nuro’s golden product is a line of fully autonomous, on-road vehicles made to transport goods quickly, the interior design is made to handle errands ranging from picking up dry cleaning to delivering groceries.">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Vaccum.jpg" style= "" onclick="onClick(this)" width="175" height="175" class="w3-hover-opacity" alt="iRobot makes a variety of smart vacuuming, floor-scrubbing and mopping devices, like shown in the image above.">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="skydio.jpg" style= "" onclick="onClick(this)" width="220" height="175" class="w3-hover-opacity" alt="Skydio designs and manufactures intelligent drones built by using AI technology and computer vision. The company’s main products include Skydio 2, an unmanned drone optimized for video and controllable via an app, a controller or a beacon. ">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="Nurse.png" style= "" onclick="onClick(this)" width="220" height="290" class="w3-hover-opacity" alt="Diligent’s AI-enabled autonomous robot named, “Moxi” robot can be left alone to perform time-consuming logistical tasks in hospitals like setting up patient rooms and restocking supply rooms.">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="moxie.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="“Moxie” (the robot above) is designed to support social, emotional and cognitive development in children, through play-based learning and lessons on turn-taking and eye contact and it costs $1500.">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Atlas.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Atlas is a “dynamic humanoid” that “uses balance and whole-body skills to achieve two-handed mobile manipulation”. The cool part about Atlas is that it can do parkour! ">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Gita.jpg" style= "" onclick="onClick(this)" width="220" height="175" class="w3-hover-opacity" alt="Piaggio Fast Forward created their flagship robot, “Gita”, which is a mobile carrier that follows people around and carries up to 45 pounds!">
+    </div>
+  </div>
+   <a href="Gallery.html" class="w3-bar-item w3-button" target="_blank"> TO GALLERY</a>
+   <a href="History.html" class="w3-bar-item w3-button" target="_blank"> TO HISTORY</a>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+
+
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+     
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+       
+      </div>
+   
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+         
+          </div>
+          <div class="w3-half">
+       
+          </div>
+        </div>
+        
+        
+       
+   
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+
+
+
+
+
+<script language="JavaScript">
+
+
+
+//Comment trail script- By Kurt (kurt.grigg@virgin.net)
+
+//Script featured on Dynamic Drive
+
+//Visit http://www.dynamicdrive.com for this script and more
+
+
+
+colours=new Array('#4da6ff','#3399ff','#1a8cff','#0080ff','#0073e6','#0066cc','#0059b3','#004d99','#004080')
+
+n = 10;
+
+y = 0;
+
+x = 0;
+
+n6=(document.getElementById&&!document.all);
+
+ns=(document.layers);
+
+ie=(document.all);
+
+d=(ns||ie)?'document.':'document.getElementById("';
+
+a=(ns||n6)?'':'all.';
+
+n6r=(n6)?'")':'';
+
+s=(ns)?'':'.style';
+
+if (ns){
+
+for (i = 0; i < n; i++)
+
+document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
+
+}
+
+if (ie)
+
+document.write('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+
+if (ie||n6){
+
+for (i = 0; i < n; i++)
+
+document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
+
+}
+
+if (ie)
+
+document.write('</div></div>');
+
+(ns||n6)?window.captureEvents(Event.MOUSEMOVE):0;
+
+function Mouse(evnt){
+
+y = (ns||n6)?evnt.pageY+4 - window.pageYOffset:event.y+4;
+
+x = (ns||n6)?evnt.pageX+1:event.x+1;
+
+}
+
+(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+
+function animate(){
+
+o=(ns||n6)?window.pageYOffset:0;
+
+if (ie)con.style.top=document.body.scrollTop + 'px';
+
+for (i = 0; i < n; i++){
+
+var temp1 = eval(d+a+"dots"+i+n6r+s);
+
+
+
+randcolours = colours[Math.floor(Math.random()*colours.length)];
+
+(ns)?temp1.bgColor = randcolours:temp1.background = randcolours;
+
+if (i < n-1){
+
+ var temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
+
+ temp1.top = parseInt(temp2.top) + 'px';
+
+ temp1.left = parseInt(temp2.left) + 'px';
+
+ }
+
+else{
+
+ temp1.top = y+o + 'px';
+
+ temp1.left = x + 'px';
+
+ }
+
+}
+
+setTimeout("animate()",10);
+
+}
+
+animate();
+
+// -->
+
+</script>
+</body>
+</html>

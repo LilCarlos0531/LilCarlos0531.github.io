@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="Robot.png" type="image/x-icon">
+<title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
+  <a href="History.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16" target="_blank">HISTORY</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT</a>
+  <a href="Final.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16" target="_blank">HOME PAGE</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">GALLERY</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="One.jpg" style="width:100%" onclick="onClick(this)" alt="Electromechanical technician">
+      <img src="Two.jpg" style="width:100%" onclick="onClick(this)" alt="Electromechanical technician">
+      <img src="Three.jpg" style="width:100%" onclick="onClick(this)" alt="Electromechanical technician">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="Four.jpg" style="width:100%" onclick="onClick(this)" alt="Aerospace engineering">
+      <img src="Five.jpg" style="width:100%" onclick="onClick(this)" alt="Aerospace engineering">
+      <img src="Six.png" style="width:100%" onclick="onClick(this)" alt="Robotics engineering">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="Seven.jpg" style="width:100%" onclick="onClick(this)" alt="Robotics engineer">
+      <img src="Eight.jpg" style="width:100%" onclick="onClick(this)" alt="Computer scientists">
+      <img src="Nine.jpg" style="width:100%" onclick="onClick(this)" alt="Computer scientist">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="Ten.jpg" style="width:100%" onclick="onClick(this)" alt="Software engineer">
+      <img src="Eleven.jpg" style="width:100%" onclick="onClick(this)" alt="Software engineer">
+      <img src="Twelve.png" style="width:100%" onclick="onClick(this)" alt="Account manager">
+    </div>
+  </div>
+
+
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+<br>
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    
+ 
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4><u>Jobs in Robotics</u></h4>
+      <p><b>#1 Electromechanical technicians</b> translate schematics and diagrams. They identify the proper method to assemble machines and other technological and electronic equipment; they have a national average salary of <b>$54,264</b> per year.</p>
+      <p><b> #2 Robotics account managers</b>  handle many financial and sales responsibilities within the industry. They have a national average salary of <b>$60,267</b> per year.</p>
+      <p><b>#3 Aerospace engineers</b> may help develop the artificial intelligence of robots as well as design robots that can efficiently perform tasks such as drilling, painting and building aircraft like drones. They have a national average salary of <b>$103,162</b> per year.</p>
+      <p><b>#4 Robotics engineers</b> are responsible for designing, developing, testing,and building robots. Robotics engineers often collaborate closely with software developers to create highly impressive robots that can perform certain tasks properly. They have a national salary of <b>$96,137</b> per year.</p>
+    <p><b>#5 Computer scientists</b> in the robotics field, they contribute to the development of artificial intelligence applications that can help humans and robots interact effectively. Computer scientists test these systems very regularly and determine whether they function properly. They have a national salary of <b>$106,430</b> per year</p>
+    <p><b>#6 Software engineers</b> build the computerized systems that exist inside of robots and help to ensure robots are able to efficiently carry out their duties. They have a national average salary of <b>$110,601</b> per year  </p>
+    
+    
+    
+    
+      
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+<script language="JavaScript">
+
+
+
+//Comment trail script- By Kurt (kurt.grigg@virgin.net)
+
+//Script featured on Dynamic Drive
+
+//Visit http://www.dynamicdrive.com for this script and more
+
+
+
+colours=new Array('#c44dff','#bb33ff','#b31aff','#aa00ff',' #9900e6','#8800cc','#7700b3','#660099','#550080')
+
+n = 10;
+
+y = 0;
+
+x = 0;
+
+n6=(document.getElementById&&!document.all);
+
+ns=(document.layers);
+
+ie=(document.all);
+
+d=(ns||ie)?'document.':'document.getElementById("';
+
+a=(ns||n6)?'':'all.';
+
+n6r=(n6)?'")':'';
+
+s=(ns)?'':'.style';
+
+if (ns){
+
+for (i = 0; i < n; i++)
+
+document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
+
+}
+
+if (ie)
+
+document.write('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+
+if (ie||n6){
+
+for (i = 0; i < n; i++)
+
+document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
+
+}
+
+if (ie)
+
+document.write('</div></div>');
+
+(ns||n6)?window.captureEvents(Event.MOUSEMOVE):0;
+
+function Mouse(evnt){
+
+y = (ns||n6)?evnt.pageY+4 - window.pageYOffset:event.y+4;
+
+x = (ns||n6)?evnt.pageX+1:event.x+1;
+
+}
+
+(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+
+function animate(){
+
+o=(ns||n6)?window.pageYOffset:0;
+
+if (ie)con.style.top=document.body.scrollTop + 'px';
+
+for (i = 0; i < n; i++){
+
+var temp1 = eval(d+a+"dots"+i+n6r+s);
+
+
+
+randcolours = colours[Math.floor(Math.random()*colours.length)];
+
+(ns)?temp1.bgColor = randcolours:temp1.background = randcolours;
+
+if (i < n-1){
+
+ var temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
+
+ temp1.top = parseInt(temp2.top) + 'px';
+
+ temp1.left = parseInt(temp2.left) + 'px';
+
+ }
+
+else{
+
+ temp1.top = y+o + 'px';
+
+ temp1.left = x + 'px';
+
+ }
+
+}
+
+setTimeout("animate()",10);
+
+}
+
+animate();
+
+// -->
+
+</script>
+
+
+
+
+
+</body>
+</html>
